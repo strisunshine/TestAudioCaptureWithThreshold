@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/lib/com.example.testaudiocapturewiththreshold">
+    <PreferenceCategory android:title="Recording">
+        <CheckBoxPreference android:title="Send to FTP server directly" android:key="sendToFTPServer" android:defaultValue="false" android:summary="Indicate if you want to send the recordings files directly to FTP server" />
+        <ListPreference android:title="Threshold Volume" android:summary="Choose the threshold Volume to record" android:key="thresholdVolume" android:defaultValue="500" android:entries="@array/volumeListArray" android:entryValues="@array/volumeListValues" />
+        <ListPreference android:title="Maximum natural pause length" android:summary="Adjust maximum natural pause length (seconds)" android:key="naturalPauseLength" android:defaultValue="5" android:entries="@array/naturalPauseLengthListArray" android:entryValues="@array/naturalPauseLengthListValues" />
+        <ListPreference android:title="Allowable pause length" android:summary="Adjust allowable pause length (seconds)" android:key="allowablePauseLength" android:defaultValue="120" android:entries="@array/allowablePauseLengthListArray" android:entryValues="@array/allowablePauseLengthListValues" />
+    </PreferenceCategory>
+</PreferenceScreen>
